@@ -1,0 +1,7 @@
+<litepal>
+    <dbname value="record"></dbname>
+    <version value="11"></version>
+    <list>
+        <mapping class="com.chinasoft.vo.Orderrecord"></mapping>
+    </list>
+</litepal>

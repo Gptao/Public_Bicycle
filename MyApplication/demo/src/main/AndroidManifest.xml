@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.demo">
+    <!--允许程序打开网络套接字-->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!--允许程序设置内置sd卡的写权限-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!--允许程序获取网络状态-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--允许程序访问WiFi网络信息-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!--允许程序读写手机状态和身份-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+    <!-- QQ登录授权所需权限 -->
+
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+
+    <application
+
+        android:name="com.chinasoft.extra.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data android:name="com.amap.api.v2.apikey" android:value="bd25a7e6e9ab8b4ed81d7ecb8fc70aab">
+            //开发者申请的key
+        </meta-data>
+        <activity android:name="com.chinasoft.activity.LoginActivity">
+        </activity>
+        <activity android:name="com.chinasoft.activity.MenuActivity">
+        </activity>
+        <activity
+            android:name="com.chinasoft.activity.RegistActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.chinasoft.activity.ForgetpasswordActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+        <activity
+            android:name="com.chinasoft.activity.LoadingActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.chinasoft.activity.AutoActivity" />
+        <activity android:name="com.chinasoft.activity.GridActivity" />
+        <activity android:name="com.chinasoft.activity.StorageActivity" />
+        <activity android:name=".InternetActivity" />
+        <activity android:name="com.chinasoft.activity.LockcodeActivity" />
+        <activity android:name="com.chinasoft.activity.ModifyActivity" />
+        <activity
+            android:name="com.chinasoft.activity.ReportActivity"
+            android:theme="@android:style/Theme.DeviceDefault.Dialog.NoActionBar" />
+        <activity android:name="com.chinasoft.activity.PayActivity"></activity>
+
+        <activity android:name="com.chinasoft.activity.BalanceActivity"></activity>
+        <activity android:name="com.chinasoft.activity.DepositActivity"></activity>
+        <activity android:name="com.chinasoft.activity.HistoryActivity"></activity>
+        <activity android:name="com.chinasoft.activity.MessageActivity"></activity>
+
+        <activity android:name="com.chinasoft.activity.Update_Pwd_Activity" android:theme="@android:style/Theme.NoTitleBar.Fullscreen"/>
+
+        <activity android:name="com.shiran.qqlogindemo.QQlogin"/>
+
+        <!-- 注册SDKActivity -->
+
+
+
+        -<activity android:name="com.tencent.tauth.AuthActivity" android:noHistory="true" android:launchMode="singleTask">
+
+
+        -<intent-filter>
+
+        <action android:name="android.intent.action.VIEW"/>
+
+        <category android:name="android.intent.category.DEFAULT"/>
+
+        <category android:name="android.intent.category.BROWSABLE"/>
+
+        <data android:scheme="tencent1106256495"/>
+
+        <!-- 开放平台获取的APPID -->
+
+
+    </intent-filter>
+
+    </activity>
+
+        <activity android:name="com.tencent.connect.common.AssistActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar" android:screenOrientation="portrait"/>
+
+
+
+        <activity android:name="com.com.hc.ViewPager.GuideActivity">
+
+
+    </activity>
+
+        <activity android:name="com.chinasoft.activity.SignupActivity"/>
+        <activity
+            android:name="com.chinasoft.zxing.activity.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity
+            android:name="com.chinasoft.zxing.activity.ResultActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Black.NoTitleBar" />
+        <activity android:name="com.chinasoft.activity.ActActivity"></activity>
+        <activity android:name="com.com.hc.ViewPager.LoadActivity">
+            <intent-filter>
+
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>

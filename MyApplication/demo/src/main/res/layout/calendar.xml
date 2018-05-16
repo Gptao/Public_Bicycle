@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+               android:background="@drawable/infobackground">
+    <ListView
+        android:layout_marginTop="100dp"
+        android:fadingEdge="none"
+        android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"/>
+    <ImageView
+        android:layout_height="80dp"
+        android:layout_marginLeft="280dp"
+        android:layout_width="80dp"
+        android:src="@drawable/tx"/>
+    <TextView
+        android:id="@+id/show_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="285dp"
+        android:text="用户名"
+        android:textColor="#000000"
+        android:textSize="35sp"/>
+</LinearLayout>

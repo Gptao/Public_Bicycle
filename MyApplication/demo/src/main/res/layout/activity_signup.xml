@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/screen_sign"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Update_Pwd_Activity"
+    android:background="@drawable/signup_bg">
+    <!--android:background="@drawable/background_login"-->
+    <LinearLayout
+        android:id="@+id/Sign_up"
+        android:layout_width="500dp"
+        android:layout_height="700dp"
+        android:orientation="vertical"
+        android:background="@drawable/background_login_div"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="Welcome To Dyh Bicycle"
+            android:layout_marginTop="20dp"
+            android:textSize="30dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="18dp"
+            android:textSize="20dp"
+            android:text="Please fill your based info"
+            android:textColor="#000000"/>
+
+        <EditText
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:background="@drawable/qq_edit_login"
+            android:hint="请输入您想要的账号"
+            android:textColorHint="#999999"
+            android:textColor="#000000"
+            android:ems="10" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:textColor="#000000"
+            android:id="@+id/pwdEt1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:password="true"
+            android:background="@drawable/qq_edit_login"
+            android:hint="请输入您的密码"
+            android:textColorHint="#999999"
+            android:ems="10" />
+        <EditText
+            android:textColor="#000000"
+            android:id="@+id/pwdEt2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:singleLine="true"
+            android:password="true"
+            android:background="@drawable/qq_edit_login"
+            android:hint="请再次确认您的密码"
+            android:textColorHint="#999999"
+            android:ems="10" />
+
+        <Button
+            android:id="@+id/subBtn"
+            android:layout_width="200dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:text="确认注册"
+            android:textSize="20sp"
+            android:textColor="#000000"
+            android:background="@drawable/btn_qq"/>
+        <!--@drawable/background_button_div-->
+    </LinearLayout>
+
+</RelativeLayout>
